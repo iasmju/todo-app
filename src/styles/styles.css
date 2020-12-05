@@ -1,0 +1,354 @@
+/* You can add global styles to this file, and also import other style files */
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.change-language {
+  margin: 0 auto;
+  display: block;
+  margin-top: 100px;
+  background-color: #50E3A4;
+  color: #46BE8B;
+  border: none;
+  width: 50px;
+}
+
+.card-container {
+  width: 230px;
+  height: auto;
+  background-color: #fff;
+}
+
+.add-task {
+  top: 25px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #50E3A4;
+  border: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.add-task img {
+  width: 15px;
+  height: auto;
+  margin: auto;
+}
+
+.add-task-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 25px;
+}
+
+.add-task-form button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  height: 30px;
+  background-color: #50E3A4;
+  border: none;
+  font-size: 12px;
+  color: #46BE8B;
+  border-radius: 10%;
+}
+
+.Input-text {
+  height: 30px;
+  font-size: 12px;
+  border: none;
+  -webkit-transition: -webkit-box-shadow 300ms;
+  transition: -webkit-box-shadow 300ms;
+  transition: box-shadow 300ms;
+  transition: box-shadow 300ms, -webkit-box-shadow 300ms;
+  background-color: #eee;
+  padding: 0 5px;
+}
+
+.Input-text::-webkit-input-placeholder {
+  color: #D0D2D9;
+  text-indent: 5px;
+}
+
+.Input-text:-ms-input-placeholder {
+  color: #D0D2D9;
+  text-indent: 5px;
+}
+
+.Input-text::-ms-input-placeholder {
+  color: #D0D2D9;
+  text-indent: 5px;
+}
+
+.Input-text::placeholder {
+  color: #D0D2D9;
+  text-indent: 5px;
+}
+
+.Input-text:focus {
+  outline: none;
+  -webkit-box-shadow: 1px 1px 10px #D0D2D9;
+          box-shadow: 1px 1px 10px #D0D2D9;
+}
+
+.no-tasks {
+  text-align: center;
+  font-size: 14px;
+  color: #D0D2D9;
+}
+
+.date-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px;
+}
+
+.date-container .date-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #575A6A;
+}
+
+.date-container .day-group {
+  margin-right: 0;
+  letter-spacing: 1px;
+  font-size: 10px;
+  color: #575A6A;
+}
+
+.date-container .date-group .day {
+  font-size: 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 65%;
+          flex: 0 0 65%;
+}
+
+.date-container .date-group .month-year {
+  text-align: left;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  line-height: 12px;
+}
+
+.task-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 25px;
+  gap: 2px;
+}
+
+.task-container a {
+  font-size: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.task-container .checked {
+  border-radius: 50%;
+  border: #50E3A4 solid 1px;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.task-container .checked img {
+  width: 10px;
+  height: auto;
+  margin: auto;
+}
+
+.task-container .unchecked {
+  border-radius: 50%;
+  border: #D0D2D9 solid 1px;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.task-container .checked-task {
+  text-decoration: line-through;
+  color: #D0D2D9;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+}
+
+.task-container .unchecked-task {
+  color: #575A6A;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+}
+
+.task-container .delete-task, .task-container .edit-task {
+  border-radius: 50%;
+  border: #ffbbc0 solid 1px;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.task-container .delete-task img, .task-container .edit-task img {
+  width: 10px;
+  height: auto;
+  margin: auto;
+}
+
+.task-container .edit-task {
+  border: #50E3A4 solid 1px;
+}
+
+.task-container:hover {
+  background-color: #f8f7f7;
+}
+
+.delete-task, .task-container .edit-task {
+  width: 20px;
+  height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-task-form {
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.edit-task-form button {
+  height: 26px;
+  width: 33px;
+  margin-left: auto;
+  background-color: #50E3A4;
+  border: none;
+  font-size: 12px;
+  color: #46BE8B;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 auto auto;
+          flex: 0 auto auto;
+  border-radius: 10%;
+}
+
+.Input-text {
+  height: 30px;
+  font-size: 12px;
+  border: none;
+  -webkit-transition: -webkit-box-shadow 300ms;
+  transition: -webkit-box-shadow 300ms;
+  transition: box-shadow 300ms;
+  transition: box-shadow 300ms, -webkit-box-shadow 300ms;
+  background-color: white;
+}
+
+.Input-text::-webkit-input-placeholder {
+  color: #D0D2D9;
+  text-indent: 5px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.Input-text:-ms-input-placeholder {
+  color: #D0D2D9;
+  text-indent: 5px;
+  text-decoration: solid;
+}
+
+.Input-text::-ms-input-placeholder {
+  color: #D0D2D9;
+  text-indent: 5px;
+  text-decoration: solid;
+}
+
+.Input-text::placeholder {
+  color: #D0D2D9;
+  text-indent: 5px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.Input-text:focus {
+  outline: none;
+  -webkit-box-shadow: 1px 1px 10px #D0D2D9;
+          box-shadow: 1px 1px 10px #D0D2D9;
+}
+
+* {
+  font-family: 'Baloo 2', cursive;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #F0EFE9;
+}
+/*# sourceMappingURL=styles.css.map */

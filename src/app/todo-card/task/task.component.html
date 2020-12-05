@@ -1,0 +1,25 @@
+<div class="task-container" (mouseenter)="showDelete=true" (mouseleave)="showDelete=false">
+
+    <a *ngIf="!isEditTask" (click)="onSelectTask(task)"
+        [className]="task.complete ? 'checked-task' : 'unchecked-task' ">
+        {{task.name}} </a>
+
+    <form *ngIf="isEditTask" class="edit-task-form">
+        <input class="Input-text" type="text" [value]="task.name" #taskName>
+        <button (click)="onEditTask(taskName)">Done</button>
+    </form>
+
+    <button *ngIf="!showDelete && !isEditTask" [className]="task.complete ? 'checked' : 'unchecked'">
+        <img *ngIf="task.complete" src="../../../assets/icons/check-icon.svg" />
+    </button>
+
+    <button *ngIf="showDelete&&!isEditTask" class="edit-task" (click)="isEditTask=true">
+        <img src="../../../assets/icons/edit-icon.svg" />
+    </button>
+    
+    <button *ngIf="showDelete&&!isEditTask" class="delete-task" (click)="onDeleteTask()">
+        <img src="../../../assets/icons/trash-icon.svg" />
+    </button>
+
+</div>
+<hr>

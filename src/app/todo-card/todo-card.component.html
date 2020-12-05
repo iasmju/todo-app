@@ -1,0 +1,28 @@
+<div class="card-container">
+
+  <app-date [lang]="lang"></app-date>
+
+  <p class="no-tasks" *ngIf="tasks.length==0">No Tasks</p>
+
+  <app-task 
+  *ngFor="let task of tasks" 
+  [task]="task"
+  (checkTask)="onSelectTask(task.id)"
+  (deleteTask)="onDeleteTask(task.id)"
+  (editTask)="onEditTask(task.id,$event,task.complete)"
+  ></app-task>
+
+  <div class="add-task-container" *ngIf="addTaskFlag">
+    <form class="add-task-form">
+      <input type="text" placeholder="Enter A Task" #taskName >
+      <button type="button" (click)="onAddTask(taskName)">Add</button>
+    </form>
+  </div>
+
+  <button class="add-task-button" (click)="addTaskFlag?addTaskFlag=false:addTaskFlag=true">
+    <img src="../../assets/icons/plus-icon.svg" />
+  </button>
+
+  
+
+</div>

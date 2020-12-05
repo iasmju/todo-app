@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import '_colors';
+@import '_app.component';
+@import '_todo-card.component';
+@import '_date.component';
+@import '_task.component';
+
+
+
+
+
+*{
+    font-family: 'Baloo 2', cursive;
+    padding: 0;
+    margin: 0;
+   // background-color: $background-color;
+}
+body{
+    background-color: $background-color;
+}

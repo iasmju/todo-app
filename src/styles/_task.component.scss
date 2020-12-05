@@ -1,0 +1,123 @@
+.task-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 2px;
+    
+    a {
+        font-size: 12px;
+        align-items: center;
+
+    }
+    .checked {
+        border-radius: 50%;
+        border: $secondary-color solid 1px;
+        background-color: #fff;
+        width: 20px;
+        height: 20px;
+        margin: auto;
+
+        img {
+            width: 10px;
+            height: auto;
+            margin: auto;
+        }
+    }
+    .unchecked {
+        border-radius: 50%;
+        border: $light-gray solid 1px;
+        background-color: #fff;
+        width: 20px;
+        height: 20px;
+        align-items: center;
+        margin: auto;
+
+    }
+    .checked-task {
+        text-decoration: line-through;
+        color: $light-gray;
+        flex: 0 0 75%;
+    }
+    .unchecked-task {
+        // text-decoration: line-through;
+        color: $primary-color;
+        flex: 0 0 75%;
+    }
+    .delete-task {
+        border-radius: 50%;
+        border: #ffbbc0 solid 1px;
+        background-color: #fff;
+        width: 20px;
+        height: 20px;
+        align-items: center;
+        img {
+            width: 10px;
+            height: auto;
+            margin: auto;
+        }
+    }
+    .edit-task{
+        @extend .delete-task;
+        border: $secondary-color solid 1px;
+
+    }
+}
+
+.task-container:hover {
+    background-color: rgb(248, 247, 247);
+}
+
+.delete-task {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+
+.edit-task-form {
+gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-task-form button {
+    height: 26px;
+    width: 33px;
+    margin-left: auto;
+    background-color: $secondary-color;
+    border: none;
+    font-size: 12px;
+    color: $dark-green;
+    flex: 0 auto auto;
+    border-radius: 10%;
+}
+
+
+.Input-text {
+    height: 30px;
+    font-size: 12px;
+    border: none;
+    transition: box-shadow 300ms;
+    background-color: rgb(255, 255, 255);
+}
+
+.Input-text::placeholder {
+    color: $light-gray;
+    text-indent: 5px;
+    text-decoration: solid;
+
+}
+
+.Input-text:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px $light-gray;
+}
+
+hr{
+    height: 1px;
+    background-color: #eee;
+    border: none;
+    margin: 0 20px;
+}
