@@ -31,7 +31,6 @@
               "src/styles/styles.scss"
             ],
             "scripts": [
-              "src/assets/anim.js"
             ]
           },
           "configurations": {

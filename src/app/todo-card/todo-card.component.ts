@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { Task } from '../shared/task.model';
 import { map } from 'rxjs/operators';
 import { TodoCardService } from './todo-card.service';
@@ -18,7 +18,7 @@ export class TodoCardComponent implements OnInit {
 
   constructor(private todoCardService: TodoCardService) { }
   ngOnInit(): void {
-    this.fetchTasks();
+    this.fetchTasks();    
   }
 
   fetchTasks() {
