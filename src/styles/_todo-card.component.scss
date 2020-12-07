@@ -1,93 +1,92 @@
 .card-container {
-    width: 230px;
-    height: auto;
-    background-color: #fff;
-    box-shadow: -5px 5px 5px  #dfded7;
-
+  width: 230px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: -5px 5px 5px #dfded7;
 }
 
 .add-task-button {
-    top: 25px;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: $secondary-color;
-    border: none;
-    position: relative;
-    display: flex;
-    margin: auto;
+  top: 25px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: $secondary-color;
+  border: none;
+  position: relative;
+  display: flex;
+  margin: auto;
 }
 
 .add-task-button img {
-    width: 15px;
-    height: auto;
-    margin: auto;
+  width: 15px;
+  height: auto;
+  margin: auto;
 }
-.add-task-container{
+.add-task-container {
   margin: 0 auto;
+  position: relative;
 }
 .add-task-form {
-  margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
 }
 
 .add-task-form button {
-    flex: 0 0 20%;
-    height: 30px;
-    background-color: $secondary-color;
-    border: none;
-    font-size: 12px;
-    color: $dark-green;
-    border-radius: 10%;
+  flex: 0 0 20%;
+  height: 30px;
+  background-color: $secondary-color;
+  border: none;
+  font-size: 12px;
+  color: $dark-green;
+  border-radius: 10%;
 }
 
 .add-task-container input {
-    height: 30px;
-    font-size: 12px;
-    border: none;
-    transition: box-shadow 300ms;
-    background-color: #eee;
-    padding: 0 5px;
+  height: 30px;
+  font-size: 12px;
+  border: none;
+  transition: box-shadow 300ms;
+  background-color: #eee;
+  padding: 0 5px;
 }
 
 .add-task-container input::placeholder {
-    color: $primary-color;
-    text-indent: 5px;
+  color: $primary-color;
+  text-indent: 5px;
 }
 
-.no-tasks{
-text-align: center;    font-size: 14px;
-    color: $light-gray;
+.no-tasks {
+  text-align: center;
+  font-size: 14px;
+  color: $light-gray;
 }
-
 
 #buttonWithText {
-    overflow: hidden;
-    width: 200px;
-  }
-  
-  #slider {
-    display: flex;
-    width: 200%;
-    transition: 0.5s;
-  }
-  
-  #slider.expanded {
-    transform: translateX(-50%);
-  }
-  
-  #toggle {
-    flex: 0 0 50%;
-  }
-  
-  #input {
-    flex: auto;
-  }
-  
-  #ok {
-    flex: none;
-  }
+  overflow: hidden;
+  width: 200px;
+}
+
+#slider {
+  display: flex;
+  width: 200%;
+  transition: 0.5s;
+}
+
+#slider.expanded {
+  transform: translateX(-50%);
+}
+
+#toggle {
+  flex: 0 0 50%;
+}
+
+#input {
+  flex: auto;
+}
+
+#ok {
+  flex: none;
+}
