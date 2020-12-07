@@ -38,7 +38,7 @@ export class DateComponent implements OnInit {
   arabicDate() {
     var months = ["يناير", "فبراير", "مارس", "إبريل", "مايو", "يونيو",
       "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
-    var days = ["اﻷحد", "والإثنين", "الثلاثاء", "اﻷربعاء", "الخميس", "الجمعة", "السبت"];
+    var days = ["اﻷحد", "الإثنين", "الثلاثاء", "اﻷربعاء", "الخميس", "الجمعة", "السبت"];
     this.month = months[this.date.getMonth()];
     this.day = days[this.date.getDay()];
   }
