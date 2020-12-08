@@ -24,7 +24,8 @@
 }
 .add-task-container {
   margin: 0 auto;
-  opacity: .4;
+  padding: 10px 25px;
+
 }
 .add-task-form {
   display: flex;
@@ -44,6 +45,8 @@
 }
 
 .add-task-container input {
+  flex: 0 0 75%;
+
   height: 30px;
   font-size: 12px;
   border: none;
